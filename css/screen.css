@@ -1,0 +1,154 @@
+﻿html {
+overflow-y: scroll;
+}
+
+body{ 
+	background:#f8f8f8;
+	font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	color:#333;
+	line-height:160%;
+	margin:0;
+	padding:0;
+	text-align:center;
+	}
+
+h1{
+	font-size:200%;
+	font-weight:normal;
+	}		
+h2, h3, h4, h5, h6{
+	font-weight:normal;
+	margin:1em 0;
+	}	
+h2{            
+	font-size:160%;
+	}	
+h3{          
+	font-size:140%;
+	}
+h4{          
+	font-size:120%;
+	}				
+
+a{
+	text-decoration:none;
+	color:#f30;
+	}
+a:hover{
+	color:#999;
+	}			
+table, input, textarea, select, li{
+	font:100% Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	line-height:160%;
+	color:#333;
+	}				
+p, blockquote, ul, ol, form{
+	margin:1em 0;
+	}
+blockquote{
+	}
+img{
+	border:none;
+	}			
+hr, .important{
+	display:none;
+	}	
+table{
+	margin:1em 0;
+	width:100%;
+	border-collapse:collapse;
+	}
+th, td{	
+	padding:2px 5px;
+	}	
+th{	
+	text-align:left;
+	}
+li{
+	display:list-item;
+	}	
+	
+#container{	
+	margin:0 auto;
+	background:#fff;
+	width:600px;
+	padding:20px 40px;
+	text-align:left;
+	}		
+
+
+/* form */
+
+	#form5{
+		margin:1em 0;
+		padding-top:10px;
+		}
+	#form5 fieldset{
+		margin:0;
+		padding-top:.5em;
+		border:none;	
+		border-top:1px solid #f1f1f1;
+		}		
+	#form5 legend{
+		background:#fff;
+		padding:0 5px;
+		font-style:italic;
+		}	
+	#form5 p{
+		clear:both;
+		margin:.5em 0;
+		overflow:hidden;
+		}	
+	#form5 label{
+		float:left;
+		width:60px;
+		display:block;
+		text-align:right;
+		margin-right:10px;
+		}	
+	#form5 input, #form5 textarea{	
+		margin:0;	
+		width:300px;
+		border:1px solid #ddd;		
+		padding:3px 5px 3px 25px;
+		}		
+	
+	
+	#form5 input#name{background:#fff url(../img/form_name.gif) no-repeat 5px 50%;}
+	#form5 input#email{background:#fff url(../img/form_email.gif) no-repeat 5px 50%;}
+	#form5 input#url{background:#fff url(../img/form_url.gif) no-repeat 5px 50%;}
+	#form5 textarea#message{background:#fff url(../img/form_note.gif) no-repeat 5px 6px;}
+	
+	
+	#form5 textarea{
+		height:125px;
+		overflow:auto;
+		}					
+	#form5 p.submit{
+		clear:both;
+		margin:1em 0;
+		padding:.5em 70px;
+		border-top:1px solid #f1f1f1;		
+		
+		}	
+	#form5 button{
+		height:28px;
+		line-height:28px;		
+		border-top:1px solid #999;
+		border-left:1px solid #999;
+		border-right:1px solid #333;
+		border-bottom:1px solid #333;
+		background:url(../img/form_button.gif) no-repeat;
+		padding:0 10px 0 25px;
+		color:#333;
+		cursor:pointer;
+		text-align:left;
+		font-size:11px;
+		font-weight:bold;
+		}				
+
+#form-result {color:blue; margin: 0 0 0 5px;}
+.errorform {color:red;}
+.okform  {color:green;}
+
+textarea {resize:none;}
