@@ -22,7 +22,7 @@ echo '
 
 // formular odeslan, method form $_POST
 if($_POST){
-$ShopEmail = 'hanka.zahradnickova@gmail.com'; //$ShopEmail = 'hanka.zahradnickova@gmail.com'
+$ShopEmail = 'krsiak.daniel@gmail.com'; //$ShopEmail = 'krsiak.daniel@gmail.com'
 $CustomerEmail =  $_POST['email']; // formularovy vyplneny email
 
 // kontrola emailu
@@ -48,22 +48,22 @@ $email_subject = "Potvrzení formuláře na webu Kyrra.cz";
 
 // text zpravy #1
 $email_content = "<p>Dobrý den,<br /><br />
-tento email slouží jako potvrzení o úspěšném odeslání Vaší zprávy z formuláře webu <b>Kyrra.cz</b><br />
+tento email slouží jako potvrzení o úspěšném odeslání Vaší zprávy z formuláře webu <b>krsiak.cz</b><br />
 Email je generován automaticky a proto na něj neodpovídejte.<br /><br /><br />
 
 <b>Zpráva:</b> <br /> ".nl2br($_POST['message'])."<br /><br /><br />
 
 S pozdravem<br />
-Zahradníčková Hanka<br />
-<a href=\"http://www.kyrra.cz/\">http://www.kyrra.cz/</a>
+Krsiak Daniel<br />
+<a href=\"http://www.krsiak.cz/\">http://www.krsiak.cz/</a>
 </p>
 "; 
 
 // UTF8 hlavicka emailu #1
  $header = 'MIME-Version: 1.0' . "\r\n" . 'Content-type: text/html; charset=UTF-8' . "\r\n";     
- $header .= "From: Hanka Zahradnickova <hanka.zahradnickova@gmail.com>\n"; // bez diakritiky
- $header .= "Reply-To: Hanka Zahradnickova <hanka.zahradnickova@gmail.com>\n"; // bez diakritiky
- $header .= "BCC: hanka.zahradnickova@gmail.com\n"; 
+ $header .= "From: Daniel Krsiak <krsiak.daniel@gmail.com>\n"; // bez diakritiky
+ $header .= "Reply-To: Daniel Krsiak <krsiak.daniel@gmail.com>\n"; // bez diakritiky
+ $header .= "BCC: krsiak.daniel@gmail.com\n"; 
  
 // command na odeslani emailu #1                
 	 if (@mail($CustomerEmail, '=?UTF-8?B?'.base64_encode($email_subject).'?=', $email_content, $header)) {
@@ -87,9 +87,9 @@ URL: ".$_POST['url']."<br /><br />
 	
 // UTF8 hlavicka emailu #2     
  $header = 'MIME-Version: 1.0' . "\r\n" . 'Content-type: text/html; charset=UTF-8' . "\r\n";     
- $header .= "From: Hanka Zahradnickova <hanka.zahradnickova@gmail.com>\n"; // bez diakritiky
- $header .= "Reply-To: Hanka Zahradnickova <hanka.zahradnickova@gmail.com>\n"; // bez diakritiky
- $header .= "BCC: hanka.zahradnickova@gmail.com\n"; 
+ $header .= "From: Daniel Krsiak <krsiak.daniel@gmail.com>\n"; // bez diakritiky
+ $header .= "Reply-To: Daniel Krsiak <krsiak.daniel@gmail.com>\n"; // bez diakritiky
+ $header .= "BCC: krsiak.daniel@gmail.com\n"; 
  
 // command na odeslani emailu #2               
 	 if (@mail($ShopEmail, '=?UTF-8?B?'.base64_encode($email_subject).'?=', $email_content, $header)) {
