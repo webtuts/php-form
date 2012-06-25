@@ -4,12 +4,13 @@ ob_start();
 $autocomplete = "off"; // formulare doplnuje browser, off = vetsi security
 $serverPOSTaddress = '/formular/'; // relativni cesta, kam se bude formular odesilat
 
+
 // uvod formulare a start  HTML
 echo '
 <!doctype html>
 
 <head>	
-	<title>Formulář</title>
+	<title>Formulář test</title>
 
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/screen.css" />
